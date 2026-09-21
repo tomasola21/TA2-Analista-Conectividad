@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Analista de Conectividad Escolar</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div class="hero-mark" aria-hidden="true">AE</div>
+        <div>
+          <p class="eyebrow">MINEDU · DATOS ABIERTOS</p>
+          <h1>Analista de Conectividad Escolar</h1>
+          <p class="subtitle">Agente de IA para el análisis de información educativa rural</p>
+        </div>
+        <div class="official-badge"><span></span> Datos oficiales · procesamiento local</div>
+      </header>
+
+      <section class="query-panel panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">CONSULTA OPERATIVA</p>
+            <h2>Analiza instituciones educativas rurales</h2>
+          </div>
+          <span id="mode-badge" class="mode-badge">Modo demostración local</span>
+        </div>
+        <form id="query-form">
+          <label for="query">Escribe tu consulta</label>
+          <textarea id="query" rows="3" placeholder="Ejemplo: Busca colegios rurales de San Martín y prepara los resultados para registrarlos.">Busca colegios rurales de San Martín y prepara los resultados para registrarlos.</textarea>
+          <div class="query-actions">
+            <p>Los CSV permanecen en el backend. El navegador recibe solo un resumen y una muestra.</p>
+            <button class="primary-button" type="submit"><span>Analizar</span><span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+      </section>
+
+      <section class="process-row" aria-label="Estado del procesamiento">
+        <div class="process-step active" data-step="waiting"><span>01</span><b>Esperando consulta</b></div>
+        <div class="process-line"></div>
+        <div class="process-step" data-step="analyzing"><span>02</span><b>Analizando solicitud</b></div>
+        <div class="process-line"></div>
+        <div class="process-step" data-step="processing"><span>03</span><b>Procesando datos</b></div>
+        <div class="process-line"></div>
+        <div class="process-step" data-step="complete"><span>04</span><b>Completado</b></div>
+      </section>
+
+      <div id="alert" class="alert hidden" role="alert"></div>
+
+      <section id="results-section" class="results-layout hidden">
+        <article class="response-card panel">
+          <div class="card-topline"><span class="status-dot"></span><span>RESPUESTA DEL AGENTE</span></div>
+          <p id="agent-response" class="agent-response"></p>
+          <div class="tool-line"><span>Herramienta utilizada</span><code id="tool-name">—</code><span class="local-tag">Procesamiento local</span></div>
+        </article>
+
+        <div class="summary-grid">
+          <article class="metric-card"><span>Instituciones encontradas</span><strong id="institutions">—</strong><small>códigos modulares únicos</small></article>
+          <article class="metric-card accent"><span>Registros encontrados</span><strong id="records">—</strong><small>registros de servicios básicos</small></article>
+          <article class="metric-card"><span>Departamento</span><strong id="department">—</strong><small>ámbito consultado</small></article>
+          <article class="metric-card"><span>Fecha de corte</span><strong id="cutoff">—</strong><small>último registro disponible</small></article>
+        </div>
+
+        <article class="table-card panel">
+          <div class="table-header">
+            <div><p class="eyebrow">MUESTRA DE RESULTADOS</p><h2>Instituciones localizadas</h2></div>
+            <span id="table-count" class="table-count">0 instituciones visibles</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Código modular</th><th>Institución</th><th>Departamento</th><th>Provincia</th><th>Distrito</th><th>Latitud</th><th>Longitud</th><th>Servicio</th><th>Consumo</th><th>Deuda</th><th>Pago</th><th>Ruralidad</th><th>Carencia</th></tr></thead>
+              <tbody id="results-body"></tbody>
+            </table>
+          </div>
+          <p class="table-note">Se muestra una muestra de hasta 10 instituciones. El total de registros de servicios básicos permanece procesado localmente.</p>
+        </article>
+
+        <article class="bottom-grid">
+          <div class="location-card panel"><p class="eyebrow">UBICACIÓN DE REFERENCIA</p><h2>Coordenadas de referencia</h2><p class="coordinate-note">Coordenadas de la primera institución de la muestra</p><div class="coordinates"><div><span>LATITUD</span><strong id="latitude">—</strong></div><div><span>LONGITUD</span><strong id="longitude">—</strong></div></div></div>
+          <div class="automation-card panel"><p class="eyebrow">AUTOMATIZACIÓN</p><h2>Prepara una salida para n8n</h2><p>Envía únicamente cinco instituciones y sus registros asociados al webhook configurado.</p><button id="register-button" class="secondary-button" type="button">Registrar en Google Sheets <span>↗</span></button><p id="register-status" class="register-status"></p></div>
+        </article>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+{
+  "version_payload": "1.0",
+  "agente": "Analista de Conectividad Escolar",
+  "fecha_consulta": "2026-09-21T00:00:00.000Z",
+  "filtros": {
+    "departamento": "San Martín"
+  },
+  "resumen": {
+    "cantidad_registros": 5,
+    "cantidad_instituciones_unicas": 5,
+    "registros_recibidos": 77247,
+    "instituciones_unicas_recibidas": 1373,
+    "limite_instituciones_aplicado": 5
+  },
+  "instituciones": [
+    {
+      "codigo_modular": "0789834",
+      "nombre_institucion": "292",
+      "departamento": "SAN MARTIN",
+      "provincia": "MOYOBAMBA",
+      "distrito": "MOYOBAMBA",
+      "ruralidad": "Rural",
+      "latitud": -5.88458,
+      "longitud": -77.08239,
+      "cantidad_registros": 1
+    },
+    {
+      "codigo_modular": "0657528",
+      "nombre_institucion": "206",
+      "departamento": "SAN MARTIN",
+      "provincia": "MOYOBAMBA",
+      "distrito": "MOYOBAMBA",
+      "ruralidad": "Rural",
+      "latitud": -5.9536,
+      "longitud": -76.9138,
+      "cantidad_registros": 1
+    },
+    {
+      "codigo_modular": "0878207",
+      "nombre_institucion": "309",
+      "departamento": "SAN MARTIN",
+      "provincia": "MOYOBAMBA",
+      "distrito": "MOYOBAMBA",
+      "ruralidad": "Rural",
+      "latitud": -5.8814,
+      "longitud": -77.1032,
+      "cantidad_registros": 1
+    },
+    {
+      "codigo_modular": "0707380",
+      "nombre_institucion": "210",
+      "departamento": "SAN MARTIN",
+      "provincia": "MOYOBAMBA",
+      "distrito": "MOYOBAMBA",
+      "ruralidad": "Rural",
+      "latitud": -5.9302,
+      "longitud": -76.941,
+      "cantidad_registros": 1
+    },
+    {
+      "codigo_modular": "0878215",
+      "nombre_institucion": "223",
+      "departamento": "SAN MARTIN",
+      "provincia": "MOYOBAMBA",
+      "distrito": "MOYOBAMBA",
+      "ruralidad": "Rural",
+      "latitud": -5.8739,
+      "longitud": -77.1859,
+      "cantidad_registros": 1
+    }
+  ],
+  "registros": [
+    {
+      "codigo_modular": "0789834",
+      "nombre_institucion": "292",
+      "departamento": "SAN MARTIN",
+      "provincia": "MOYOBAMBA",
+      "distrito": "MOYOBAMBA",
+      "ruralidad": "Rural",
+      "latitud": -5.88458,
+      "longitud": -77.08239,
+      "servicio": "LUZ",
+      "consumo": 4,
+      "deuda": 0,
+      "indicador_pago": "1",
+      "fecha_corte": "20250525",
+      "registro_servicio_basico": "Encontrado",
+      "carencia_confirmada": "No determinada"
+    },
+    {
+      "codigo_modular": "0657528",
+      "nombre_institucion": "206",
+      "departamento": "SAN MARTIN",
+      "provincia": "MOYOBAMBA",
+      "distrito": "MOYOBAMBA",
+      "ruralidad": "Rural",
+      "latitud": -5.9536,
+      "longitud": -76.9138,
+      "servicio": "LUZ",
+      "consumo": 1,
+      "deuda": 0,
+      "indicador_pago": "1",
+      "fecha_corte": "20250525",
+      "registro_servicio_basico": "Encontrado",
+      "carencia_confirmada": "No determinada"
+    },
+    {
+      "codigo_modular": "0878207",
+      "nombre_institucion": "309",
+      "departamento": "SAN MARTIN",
+      "provincia": "MOYOBAMBA",
+      "distrito": "MOYOBAMBA",
+      "ruralidad": "Rural",
+      "latitud": -5.8814,
+      "longitud": -77.1032,
+      "servicio": "LUZ",
+      "consumo": 0,
+      "deuda": 0,
+      "indicador_pago": "1",
+      "fecha_corte": "20250525",
+      "registro_servicio_basico": "Encontrado",
+      "carencia_confirmada": "No determinada"
+    },
+    {
+      "codigo_modular": "0707380",
+      "nombre_institucion": "210",
+      "departamento": "SAN MARTIN",
+      "provincia": "MOYOBAMBA",
+      "distrito": "MOYOBAMBA",
+      "ruralidad": "Rural",
+      "latitud": -5.9302,
+      "longitud": -76.941,
+      "servicio": "LUZ",
+      "consumo": 1,
+      "deuda": 0,
+      "indicador_pago": "1",
+      "fecha_corte": "20250525",
+      "registro_servicio_basico": "Encontrado",
+      "carencia_confirmada": "No determinada"
+    },
+    {
+      "codigo_modular": "0878215",
+      "nombre_institucion": "223",
+      "departamento": "SAN MARTIN",
+      "provincia": "MOYOBAMBA",
+      "distrito": "MOYOBAMBA",
+      "ruralidad": "Rural",
+      "latitud": -5.8739,
+      "longitud": -77.1859,
+      "servicio": "LUZ",
+      "consumo": 2,
+      "deuda": 0,
+      "indicador_pago": "1",
+      "fecha_corte": "20250525",
+      "registro_servicio_basico": "Encontrado",
+      "carencia_confirmada": "No determinada"
+    }
+  ],
+  "reporte": {
+    "titulo": "Reporte de resultados del Analista de Conectividad Escolar",
+    "resumen": "Se exportaron 5 registros correspondientes a 5 instituciones educativas unicas.",
+    "interpretacion": "Los datos representan registros encontrados de servicios basicos y no confirman por si solos una carencia.",
+    "limitaciones": [
+      "La ausencia de un registro no se interpreta como carencia.",
+      "La fuente de pagos corresponde a la region San Martin y no representa cobertura nacional.",
+      "La cantidad de registros puede ser mayor que la cantidad de instituciones por existir varios pagos por institucion."
+    ]
+  },
+  "campos_registro": [
+    "codigo_modular",
+    "nombre_institucion",
+    "departamento",
+    "provincia",
+    "distrito",
+    "ruralidad",
+    "latitud",
+    "longitud",
+    "servicio",
+    "consumo",
+    "deuda",
+    "indicador_pago",
+    "fecha_corte",
+    "registro_servicio_basico",
+    "carencia_confirmada"
+  ]
+}

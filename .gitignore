@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+npm-debug.log*
+.DS_Store
+
+# Artefactos locales
+src/__pycache__/
+__pycache__/
+*.pyc
+
+# Dataset de fuente mayor que el limite de archivos de GitHub.
+# Se mantiene local para ejecutar el procesamiento completo.
+datos/pago_ssbb_local_escolar_0.csv
